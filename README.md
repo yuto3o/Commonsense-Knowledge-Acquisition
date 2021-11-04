@@ -14,12 +14,14 @@
   - [4.2. 3.2 QA](#42-32-qa)
   - [4.3. 3.3 Reasoning](#43-33-reasoning)
 - [5. Related Works](#5-related-works)
-  - [5.1. OpenIE](#51-openie)
-    - [5.1.1. Pipeline](#511-pipeline)
-    - [5.1.2. Supervised Method](#512-supervised-method)
-  - [5.2. Semantic Role Labeling](#52-semantic-role-labeling)
-  - [5.3. Entity and Relation Extraction](#53-entity-and-relation-extraction)
-  - [Event Extraction](#event-extraction)
+  - [5.1. Neural Knowledge Graph](#51-neural-knowledge-graph)
+  - [5.2. OpenIE](#52-openie)
+    - [5.2.1. Pipeline](#521-pipeline)
+    - [5.2.2. Supervised Method](#522-supervised-method)
+  - [5.3. Semantic Role Labeling](#53-semantic-role-labeling)
+  - [5.4. Entity and Relation Extraction](#54-entity-and-relation-extraction)
+  - [5.5. Event Extraction](#55-event-extraction)
+  - [5.6. Prompts](#56-prompts)
 
 <!-- omit in toc -->
 ## Scholar
@@ -120,9 +122,16 @@
 
 ## 5. Related Works
 
-### 5.1. OpenIE
+### 5.1. Neural Knowledge Graph
 
-#### 5.1.1. Pipeline
+- Language Models as Knowledge Bases. EMNLP/IJCNLP. 2019. [[paper]](https://doi.org/10.18653/v1/D19-1250)
+- How Can We Know What Language Models Know. TACL. 2020. [[paper]](https://transacl.org/ojs/index.php/tacl/article/view/1983)
+- Knowledgeable or Educated Guess? Revisiting Language Models as Knowledge Bases. EMNLP/IJCNLP. 2021. [[paper]](https://doi.org/10.18653/v1/2021.acl-long.146)
+
+
+### 5.2. OpenIE
+
+#### 5.2.1. Pipeline
 - **[OpenIE 1.x]** TextRunner: Open Information Extraction on the Web. NAACL. 2007. [[paper]](https://www.aclweb.org/anthology/N07-4013/)
   - The Tradeoffs Between Open and Traditional Relation Extraction. ACL. 2008. [[paper]](https://www.aclweb.org/anthology/P08-1004/)
   - Using Wikipedia to bootstrap open information extraction. SIGMOD. 2008. [[paper]](https://doi.org/10.1145/1519103.1519113)
@@ -142,7 +151,7 @@
 - **[MinIE]** MinIE: Minimizing Facts in Open Information Extraction". EMNLP. 2017. [[paper]](https://aclanthology.org/D17-1278/)
 - **[StuffIE]** StuffIE: Semantic Tagging of Unlabeled Facets Using Fine-Grained Information Extraction. CIKM. 2018. [[paper]](https://dl.acm.org/doi/abs/10.1145/3269206.3271812)
 
-#### 5.1.2. Supervised Method
+#### 5.2.2. Supervised Method
 - **[RnnOIE; Seq2Seq; Tag]** Supervised Open Information Extraction. NAACL-HLT. 2018. [[paper]](https://doi.org/10.18653/v1/n18-1081)
 - **[CopyAttention; Seq2Seq; Generation]** Neural Open Information Extraction. ACL. 2018. [[paper]](https://aclanthology.org/P18-2065/)
 - **[SpanOIE; Span]** Span Model for Open Information Extraction on Accurate Corpus. AAAI. 2020. [[paper]](https://aaai.org/ojs/index.php/AAAI/article/view/6497)
@@ -150,19 +159,24 @@
 - **[IMoJIE; Seq2Seq; Generation]** IMoJIE: Iterative Memory-Based Joint Open Information Extraction. ACL. 2020. [[paper]](https://doi.org/10.18653/v1/2020.acl-main.521)
 - **[LSOIE; Dataset]** LSOIE: A Large-Scale Dataset for Supervised Open Information Extraction. EACL. 2021. [[paper]](https://aclanthology.org/2021.eacl-main.222)
 
-### 5.2. Semantic Role Labeling
+### 5.3. Semantic Role Labeling
 
 - Jointly Predicting Predicates and Argumentsin Neural Semantic Role Labeling. ACL. 2018. [[paper]](https://aclanthology.org/P18-2058/)
 - Dependency or Span, End-to-End Uniform Semantic Role Labeling. AAAI. 2019. [[paper]](https://doi.org/10.1609/aaai.v33i01.33016730)
 
-### 5.3. Entity and Relation Extraction
+### 5.4. Entity and Relation Extraction
 
 - Locate and Label: A Two-stage Identifier for Nested Named Entity Recognition. ACL/IJCNLP. 2020. [[paper]](https://doi.org/10.18653/v1/2021.acl-long.216)
 - **[PURE]** A Frustratingly Easy Approach for Entity and Relation Extraction. NAACL-HLT. 2021. [[paper]](https://doi.org/10.18653/v1/2021.naacl-main.5)
 - 🧲 Template-Based Named Entity Recognition Using BART. ACL/IJCNLP(Findings). 2021. [[paper]](https://doi.org/10.18653/v1/2021.findings-acl.161)
 
-### Event Extraction
+### 5.5. Event Extraction
 - **[OneIE]** A Joint Neural Model for Information Extraction with Global Features. ACL. 2020. [[paper]](https://aclanthology.org/2020.acl-main.713/)
 - Text2Event: Controllable Sequence-to-Structure Generation for End-to-end Event Extraction. ACL/IJCNLP. 2021. [[paper]](https://doi.org/10.18653/v1/2021.acl-long.217)
 - 🧲 Generating Disentangled Arguments with Prompts: A Simple Event Extraction Framework that Works. Arixv. 2021. [[paper]](https://export.arxiv.org/abs/2110.04525)
 - 🧲 Eliciting Knowledge from Language Models for Event Extraction. Arixv. 2021. [[paper]](https://arxiv.org/abs/2109.05190)
+
+### 5.6. Prompts
+- WARP: Word-level Adversarial ReProgramming. ACL/IJCNLP. [[paper]](https://doi.org/10.18653/v1/2021.acl-long.381)
+- Prefix-Tuning: Optimizing Continuous Prompts for Generation. ACL/IJCNLP. [[paper]](https://doi.org/10.18653/v1/2021.acl-long.353)
+- The Power of Scale for Parameter-Efficient Prompt Tuning. Arxiv. [[paper]](https://arxiv.org/abs/2104.08691)
