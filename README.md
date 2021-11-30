@@ -3,6 +3,7 @@
 
 <!-- omit in toc -->
 ## TOC
+- [](#)
 - [1. Knowledge Base / Benchmark / System](#1-knowledge-base--benchmark--system)
 - [2. Knowledge Mining / Extraction / Generation](#2-knowledge-mining--extraction--generation)
   - [2.1. Technique](#21-technique)
@@ -21,7 +22,7 @@
   - [5.3. Semantic Role Labeling](#53-semantic-role-labeling)
   - [5.4. Entity and Relation Extraction](#54-entity-and-relation-extraction)
   - [5.5. Event Extraction](#55-event-extraction)
-  - [5.6. Prompts](#56-prompts)
+  - [5.6. 🧲 Prompts](#56--prompts)
 
 <!-- omit in toc -->
 ## Scholar
@@ -37,6 +38,15 @@
   > ISI's Center on Knowledge Graphs research group combines artificial intelligence, the semantic web, and database integration techniques to solve complex information integration problems. We leverage general research techniques across information-intensive disciplines, including medical informatics, geospatial data integration and the social Web.
 
 ---
+
+## Keynotes & Workshops
+
+- COIN: COmmonsense INference in Natural Language Processing.  EMNLP-IJCNLP. 2019. [[link]](https://coinnlp.github.io/)
+- Fact Extraction and Verification. EMNLP / FEVER. 2020. [[link]](https://fever.ai/index.html)
+- Commonsense Tutorial. ACL. 2020. [[link]](https://homes.cs.washington.edu/~msap/acl2020-commonsense/)
+- Common Sense Knowledge Graphs. AAAI. 2020. [[link]](https://usc-isi-i2.github.io/AAAI21workshop/)
+- Commonsense AI: Myth and Truth. ICLR. 2021. [[link]](https://iclr.cc/virtual/2021/invited-talk/3719)
+- Information to Wisdom: Commonsense Knowledge Extraction and Compilation. WSDM. 2021. [[link]](https://www.mpi-inf.mpg.de/commonsense-tutorial-wsdm-2021)
 
 <!-- omit in toc -->
 ## Notation
@@ -131,6 +141,8 @@
 
 ### 5.2. OpenIE
 
+- Zero-Shot Information Extraction as a Unified Text-to-Triple Translation. Arxiv. 2021. [[paper]](https://arxiv.org/abs/2109.11171)
+
 #### 5.2.1. Pipeline
 - **[OpenIE 1.x]** TextRunner: Open Information Extraction on the Web. NAACL. 2007. [[paper]](https://www.aclweb.org/anthology/N07-4013/)
   - The Tradeoffs Between Open and Traditional Relation Extraction. ACL. 2008. [[paper]](https://www.aclweb.org/anthology/P08-1004/)
@@ -150,6 +162,7 @@
   - **[CALMIE]** Open Information Extraction from Conjunctive Sentences. COLING. 2018. [[paper]](https://aclanthology.org/C18-1194/)
 - **[MinIE]** MinIE: Minimizing Facts in Open Information Extraction". EMNLP. 2017. [[paper]](https://aclanthology.org/D17-1278/)
 - **[StuffIE]** StuffIE: Semantic Tagging of Unlabeled Facets Using Fine-Grained Information Extraction. CIKM. 2018. [[paper]](https://dl.acm.org/doi/abs/10.1145/3269206.3271812)
+- Graphene: Semantically-Linked Propositions in Open Information Extraction. COLING. 2018. [[paper]](https://aclanthology.org/C18-1195/)
 
 #### 5.2.2. Supervised Method
 - **[RnnOIE; Seq2Seq; Tag]** Supervised Open Information Extraction. NAACL-HLT. 2018. [[paper]](https://doi.org/10.18653/v1/n18-1081)
@@ -176,7 +189,8 @@
 - 🧲 Generating Disentangled Arguments with Prompts: A Simple Event Extraction Framework that Works. Arixv. 2021. [[paper]](https://export.arxiv.org/abs/2110.04525)
 - 🧲 Eliciting Knowledge from Language Models for Event Extraction. Arixv. 2021. [[paper]](https://arxiv.org/abs/2109.05190)
 
-### 5.6. Prompts
-- WARP: Word-level Adversarial ReProgramming. ACL/IJCNLP. [[paper]](https://doi.org/10.18653/v1/2021.acl-long.381)
-- Prefix-Tuning: Optimizing Continuous Prompts for Generation. ACL/IJCNLP. [[paper]](https://doi.org/10.18653/v1/2021.acl-long.353)
-- The Power of Scale for Parameter-Efficient Prompt Tuning. Arxiv. [[paper]](https://arxiv.org/abs/2104.08691)
+### 5.6. 🧲 Prompts
+- WARP: Word-level Adversarial ReProgramming. ACL/IJCNLP. 2021. [[paper]](https://doi.org/10.18653/v1/2021.acl-long.381)
+- Prefix-Tuning: Optimizing Continuous Prompts for Generation. ACL/IJCNLP. 2021. [[paper]](https://doi.org/10.18653/v1/2021.acl-long.353)
+- The Power of Scale for Parameter-Efficient Prompt Tuning. Arxiv. 2021. [[paper]](https://arxiv.org/abs/2104.08691)
+- Surface Form Competition:Why the Highest Probability Answer Isn’t Always Right. EMNLP. 2021. [[paper]](https://aclanthology.org/2021.emnlp-main.564)
