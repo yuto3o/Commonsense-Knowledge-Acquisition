@@ -3,26 +3,25 @@
 
 <!-- omit in toc -->
 ## TOC
-- [](#)
-- [1. Knowledge Base / Benchmark / System](#1-knowledge-base--benchmark--system)
-- [2. Knowledge Mining / Extraction / Generation](#2-knowledge-mining--extraction--generation)
-  - [2.1. Technique](#21-technique)
-  - [2.2. Distillation](#22-distillation)
-- [3. Neural Knowledge Graph](#3-neural-knowledge-graph)
-  - [3.1. Zero/Few-shot](#31-zerofew-shot)
-- [4. Application](#4-application)
-  - [4.1. Boost LMs](#41-boost-lms)
-  - [4.2. 3.2 QA](#42-32-qa)
-  - [4.3. 3.3 Reasoning](#43-33-reasoning)
-- [5. Related Works](#5-related-works)
-  - [5.1. Neural Knowledge Graph](#51-neural-knowledge-graph)
-  - [5.2. OpenIE](#52-openie)
-    - [5.2.1. Pipeline](#521-pipeline)
-    - [5.2.2. Supervised Method](#522-supervised-method)
-  - [5.3. Semantic Role Labeling](#53-semantic-role-labeling)
-  - [5.4. Entity and Relation Extraction](#54-entity-and-relation-extraction)
-  - [5.5. Event Extraction](#55-event-extraction)
-  - [5.6. 🧲 Prompts](#56--prompts)
+- [1. Keynotes & Workshops](#1-keynotes--workshops)
+- [2. Knowledge Base / Benchmark / System](#2-knowledge-base--benchmark--system)
+- [3. Knowledge Mining / Extraction / Generation](#3-knowledge-mining--extraction--generation)
+  - [3.1. Technique](#31-technique)
+  - [3.2. Distillation](#32-distillation)
+  - [3.3. Factual Probing](#33-factual-probing)
+- [4. Neural Knowledge Graph](#4-neural-knowledge-graph)
+- [5. Application](#5-application)
+  - [5.1. Boost LMs](#51-boost-lms)
+  - [5.2. 3.2 QA](#52-32-qa)
+  - [5.3. 3.3 Reasoning](#53-33-reasoning)
+- [6. Related Works](#6-related-works)
+  - [6.1. OpenIE](#61-openie)
+    - [6.1.1. Pipeline](#611-pipeline)
+    - [6.1.2. Supervised Method](#612-supervised-method)
+  - [6.2. Semantic Role Labeling](#62-semantic-role-labeling)
+  - [6.3. Entity and Relation Extraction](#63-entity-and-relation-extraction)
+  - [6.4. Event Extraction](#64-event-extraction)
+  - [6.5. 🧲 Prompts](#65--prompts)
 
 <!-- omit in toc -->
 ## Scholar
@@ -39,7 +38,7 @@
 
 ---
 
-## Keynotes & Workshops
+## 1. Keynotes & Workshops
 
 - COIN: COmmonsense INference in Natural Language Processing.  EMNLP-IJCNLP. 2019. [[link]](https://coinnlp.github.io/)
 - Fact Extraction and Verification. EMNLP / FEVER. 2020. [[link]](https://fever.ai/index.html)
@@ -58,7 +57,7 @@
 
 - 🧲 for Prompt
 
-## 1. Knowledge Base / Benchmark / System
+## 2. Knowledge Base / Benchmark / System
 
 - HowNet - a hybrid language and knowledge resource. NLPKE. 2003. [[paper]](https://ieeexplore.ieee.org/document/1276017)
   - OpenHowNet: An Open Sememe-based Lexical Knowledge Base. ArXiv. 2019. [[paper]](https://arxiv.org/abs/1901.09957)
@@ -80,9 +79,9 @@
 - 🎥 A Benchmark for Structured Procedural Knowledge Extraction from Cooking Videos. Arxiv. 2020. [[paper]](https://arxiv.org/abs/2005.00706) [[github]](https://github.com/frankxu2004/cooking-procedural-extraction)
 - 🎥 **[VidSRL]** Visual Semantic Role Labeling for Video Understanding. CVPR. 2021. [[paper]](https://openaccess.thecvf.com/content/CVPR2021/html/Sadhu_Visual_Semantic_Role_Labeling_for_Video_Understanding_CVPR_2021_paper.html)
 
-## 2. Knowledge Mining / Extraction / Generation
+## 3. Knowledge Mining / Extraction / Generation
 
-### 2.1. Technique
+### 3.1. Technique
 - **[NEIL]** NEIL: Extracting Visual Knowledge from Web Data. ICCV. 2013. [[paper]](https://ieeexplore.ieee.org/document/6751285)
 - Automatic Extraction of Commonsense LocatedNear Knowledge. ACL. 2018. [[paper]](https://aclanthology.org/P18-2016/)
 - **[Quasimodo]** Commonsense Properties from Query Logs and Question Answering Forums. CIKM. 2019. [[paper]](https://dl.acm.org/doi/10.1145/3357384.3357955)
@@ -98,7 +97,7 @@
 - Causal Inference of Script Knowledge. EMNLP. 2020. [[paper]](https://aclanthology.org/2020.emnlp-main.612/)
 - **[Ascent]** Advanced Semantics for Commonsense Knowledge Extraction. WWW. 2021. [[paper]](https://arxiv.org/abs/2011.00905)
 
-### 2.2. Distillation
+### 3.2. Distillation
 - **[DICE]** Joint Reasoning for Multi-Faceted Commonsense Knowledge. AKBC. 2020. [[paper]](https://www.akbc.ws/2020/papers/QnPV72SZVt)
 - Commonsense Knowledge in Wikidata. ISWC. 2020. [[paper]](https://arxiv.org/abs/2008.08114)
 - Dimensions of Commonsense Knowledge. ArXiv. 2021. [[paper]](https://arxiv.org/abs/2101.04640)
@@ -106,7 +105,14 @@
 - Information to Wisdom: Commonsense Knowledge Extraction and Compilation. WSDM. 2021. [[paper]](https://doi.org/10.1145/3437963.3441664)
 - DISCOS: Bridging the Gap between Discourse Knowledge and Commonsense Knowledge. WWW. 2021. [[paper]](https://doi.org/10.1145/3442381.3450117)
 
-## 3. Neural Knowledge Graph
+### 3.3. Factual Probing
+- Commonsense Knowledge Mining from Pretrained Models. EMNLP-IJCNLP. 2019. [[paper]](https://aclanthology.org/D19-1109)
+- Language Models as Knowledge Bases. EMNLP/IJCNLP. 2019. [[paper]](https://doi.org/10.18653/v1/D19-1250)
+- How Can We Know What Language Models Know. TACL. 2020. [[paper]](https://transacl.org/ojs/index.php/tacl/article/view/1983)
+- Knowledgeable or Educated Guess? Revisiting Language Models as Knowledge Bases. EMNLP/IJCNLP. 2021. [[paper]](https://doi.org/10.18653/v1/2021.acl-long.146)
+- Factual Probing Is [MASK]: Learning vs. Learning to Recall. NAACL. 2021. [[paper]](https://arxiv.org/abs/2104.05240)
+
+## 4. Neural Knowledge Graph
 - COMET: Commonsense Transformers for Automatic Knowledge Graph Construction. ACL. 2019. [[paper]](https://doi.org/10.18653/v1/p19-1470) [[github]](https://github.com/atcbosselut/comet-commonsense)
 - Commonsense Knowledge Base Completion with Structural and Semantic Context. AAAI. 2020. [[paper]](https://aaai.org/ojs/index.php/AAAI/article/view/5684)
 - Inducing Relational Knowledge from BERT. AAAI. 2020. [[paper]](https://aaai.org/ojs/index.php/AAAI/article/view/6242)
@@ -114,36 +120,26 @@
 - 📷 PIGLeT: Language Grounding Through Neuro-Symbolic Interaction in a 3D World. ACL/IJCNLP. 2021. [[paper]](https://doi.org/10.18653/v1/2021.acl-long.159)
 - Inductive Learning on Commonsense Knowledge Graph Completion. IJCNN. 2021. [[paper]](https://arxiv.org/abs/2009.09263)
 
-### 3.1. Zero/Few-shot
-- Commonsense Knowledge Mining from Pretrained Models. EMNLP-IJCNLP. 2019. [[paper]](https://aclanthology.org/D19-1109)
 
+## 5. Application
 
-## 4. Application
-
-### 4.1. Boost LMs
+### 5.1. Boost LMs
 - Teaching Pretrained Models with Commonsense Reasoning: A Preliminary KB-Based Approach. NeurIPS. 2019. [[paper]](https://arxiv.org/abs/1909.09743)
 
-### 4.2. 3.2 QA
+### 5.2. 3.2 QA
 
 - CosMo: Conditional Seq2Seq-based Mixture Model for Zero-Shot Commonsense Question Answering. COLING. 2020. [[paper]](https://www.aclweb.org/anthology/2020.coling-main.467)
 - Dynamic Neuro-Symbolic Knowledge Graph Construction for Zero-shot Commonsense Question Answering. AAAI. 2021. [[paper]](https://ojs.aaai.org/index.php/AAAI/article/view/16625)
 
-### 4.3. 3.3 Reasoning
+### 5.3. 3.3 Reasoning
 
-## 5. Related Works
+## 6. Related Works
 
-### 5.1. Neural Knowledge Graph
-
-- Language Models as Knowledge Bases. EMNLP/IJCNLP. 2019. [[paper]](https://doi.org/10.18653/v1/D19-1250)
-- How Can We Know What Language Models Know. TACL. 2020. [[paper]](https://transacl.org/ojs/index.php/tacl/article/view/1983)
-- Knowledgeable or Educated Guess? Revisiting Language Models as Knowledge Bases. EMNLP/IJCNLP. 2021. [[paper]](https://doi.org/10.18653/v1/2021.acl-long.146)
-
-
-### 5.2. OpenIE
+### 6.1. OpenIE
 
 - Zero-Shot Information Extraction as a Unified Text-to-Triple Translation. Arxiv. 2021. [[paper]](https://arxiv.org/abs/2109.11171)
 
-#### 5.2.1. Pipeline
+#### 6.1.1. Pipeline
 - **[OpenIE 1.x]** TextRunner: Open Information Extraction on the Web. NAACL. 2007. [[paper]](https://www.aclweb.org/anthology/N07-4013/)
   - The Tradeoffs Between Open and Traditional Relation Extraction. ACL. 2008. [[paper]](https://www.aclweb.org/anthology/P08-1004/)
   - Using Wikipedia to bootstrap open information extraction. SIGMOD. 2008. [[paper]](https://doi.org/10.1145/1519103.1519113)
@@ -164,33 +160,35 @@
 - **[StuffIE]** StuffIE: Semantic Tagging of Unlabeled Facets Using Fine-Grained Information Extraction. CIKM. 2018. [[paper]](https://dl.acm.org/doi/abs/10.1145/3269206.3271812)
 - Graphene: Semantically-Linked Propositions in Open Information Extraction. COLING. 2018. [[paper]](https://aclanthology.org/C18-1195/)
 
-#### 5.2.2. Supervised Method
+#### 6.1.2. Supervised Method
 - **[RnnOIE; Seq2Seq; Tag]** Supervised Open Information Extraction. NAACL-HLT. 2018. [[paper]](https://doi.org/10.18653/v1/n18-1081)
 - **[CopyAttention; Seq2Seq; Generation]** Neural Open Information Extraction. ACL. 2018. [[paper]](https://aclanthology.org/P18-2065/)
+- **[Seq2Seq; Generation]** Logician: A Unified End-to-End Neural Approach for Open-Domain Information Extraction. WSDM. 2018. [[paper]](https://arxiv.org/abs/1904.12535)
 - **[SpanOIE; Span]** Span Model for Open Information Extraction on Accurate Corpus. AAAI. 2020. [[paper]](https://aaai.org/ojs/index.php/AAAI/article/view/6497)
 - **[OpenIE 6.x; Seq2Seq; Tag]** OpenIE6: Iterative Grid Labeling and Coordination Analysis for Open Information Extraction. EMNLP. 2020. [[paper]](https://doi.org/10.18653/v1/2020.emnlp-main.306) [[github]](https://github.com/dair-iitd/openie6)
 - **[IMoJIE; Seq2Seq; Generation]** IMoJIE: Iterative Memory-Based Joint Open Information Extraction. ACL. 2020. [[paper]](https://doi.org/10.18653/v1/2020.acl-main.521)
-- **[LSOIE; Dataset]** LSOIE: A Large-Scale Dataset for Supervised Open Information Extraction. EACL. 2021. [[paper]](https://aclanthology.org/2021.eacl-main.222)
 
-### 5.3. Semantic Role Labeling
+### 6.2. Semantic Role Labeling
 
 - Jointly Predicting Predicates and Argumentsin Neural Semantic Role Labeling. ACL. 2018. [[paper]](https://aclanthology.org/P18-2058/)
 - Dependency or Span, End-to-End Uniform Semantic Role Labeling. AAAI. 2019. [[paper]](https://doi.org/10.1609/aaai.v33i01.33016730)
 
-### 5.4. Entity and Relation Extraction
+### 6.3. Entity and Relation Extraction
 
 - Locate and Label: A Two-stage Identifier for Nested Named Entity Recognition. ACL/IJCNLP. 2020. [[paper]](https://doi.org/10.18653/v1/2021.acl-long.216)
 - **[PURE]** A Frustratingly Easy Approach for Entity and Relation Extraction. NAACL-HLT. 2021. [[paper]](https://doi.org/10.18653/v1/2021.naacl-main.5)
 - 🧲 Template-Based Named Entity Recognition Using BART. ACL/IJCNLP(Findings). 2021. [[paper]](https://doi.org/10.18653/v1/2021.findings-acl.161)
 
-### 5.5. Event Extraction
+### 6.4. Event Extraction
 - **[OneIE]** A Joint Neural Model for Information Extraction with Global Features. ACL. 2020. [[paper]](https://aclanthology.org/2020.acl-main.713/)
 - Text2Event: Controllable Sequence-to-Structure Generation for End-to-end Event Extraction. ACL/IJCNLP. 2021. [[paper]](https://doi.org/10.18653/v1/2021.acl-long.217)
 - 🧲 Generating Disentangled Arguments with Prompts: A Simple Event Extraction Framework that Works. Arixv. 2021. [[paper]](https://export.arxiv.org/abs/2110.04525)
 - 🧲 Eliciting Knowledge from Language Models for Event Extraction. Arixv. 2021. [[paper]](https://arxiv.org/abs/2109.05190)
 
-### 5.6. 🧲 Prompts
+### 6.5. 🧲 Prompts
 - WARP: Word-level Adversarial ReProgramming. ACL/IJCNLP. 2021. [[paper]](https://doi.org/10.18653/v1/2021.acl-long.381)
 - Prefix-Tuning: Optimizing Continuous Prompts for Generation. ACL/IJCNLP. 2021. [[paper]](https://doi.org/10.18653/v1/2021.acl-long.353)
-- The Power of Scale for Parameter-Efficient Prompt Tuning. Arxiv. 2021. [[paper]](https://arxiv.org/abs/2104.08691)
+- The Power of Scale for Parameter-Efficient Prompt Tuning. EMNLP. 2021. [[paper]](https://arxiv.org/abs/2104.08691)
 - Surface Form Competition:Why the Highest Probability Answer Isn’t Always Right. EMNLP. 2021. [[paper]](https://aclanthology.org/2021.emnlp-main.564)
+- **[P-Tuning]** GPT Understands, Too. Arxiv. 2021. [[paper]](https://arxiv.org/abs/2103.10385)
+- P-Tuning v2: Prompt Tuning Can Be Comparable to Fine-tuning Universally Across Scales and Tasks. Arxiv. 2021. [[paper]](https://arxiv.org/abs/2110.07602v2)
