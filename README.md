@@ -18,10 +18,12 @@
   - [6.1. OpenIE](#61-openie)
     - [6.1.1. Pipeline](#611-pipeline)
     - [6.1.2. Supervised Method](#612-supervised-method)
+    - [6.1.3. Beyond](#613-beyond)
   - [6.2. Semantic Role Labeling](#62-semantic-role-labeling)
   - [6.3. Entity and Relation Extraction](#63-entity-and-relation-extraction)
   - [6.4. Event Extraction](#64-event-extraction)
   - [6.5. 🧲 Prompts](#65--prompts)
+  - [6.6. New Paradigm](#66-new-paradigm)
 
 <!-- omit in toc -->
 ## Scholar
@@ -36,6 +38,8 @@
 - usc-isi-i2 [homepage](https://usc-isi-i2.github.io/home/)
   > ISI's Center on Knowledge Graphs research group combines artificial intelligence, the semantic web, and database integration techniques to solve complex information integration problems. We leverage general research techniques across information-intensive disciplines, including medical informatics, geospatial data integration and the social Web.
 
+- Yangqiu Song [[homepage]](https://www.cse.ust.hk/~yqsong/)
+
 ---
 
 ## 1. Keynotes & Workshops
@@ -44,8 +48,10 @@
 - Fact Extraction and Verification. EMNLP / FEVER. 2020. [[link]](https://fever.ai/index.html)
 - Commonsense Tutorial. ACL. 2020. [[link]](https://homes.cs.washington.edu/~msap/acl2020-commonsense/)
 - Common Sense Knowledge Graphs. AAAI. 2020. [[link]](https://usc-isi-i2.github.io/AAAI21workshop/)
+- MH2: Commonsense Knowledge Acquisition and Representation. AAAI. 2021. [[link]](https://usc-isi-i2.github.io/AAAI21Tutorial/)
 - Commonsense AI: Myth and Truth. ICLR. 2021. [[link]](https://iclr.cc/virtual/2021/invited-talk/3719)
 - Information to Wisdom: Commonsense Knowledge Extraction and Compilation. WSDM. 2021. [[link]](https://www.mpi-inf.mpg.de/commonsense-tutorial-wsdm-2021)
+- Commonsense Knowledge Acquisition and Reasoning. CCKS: T4. 2021. [[link]](http://sigkg.cn/ccks2021/?page_id=23) [[video]](https://hub.baai.ac.cn/view/11404)
 
 <!-- omit in toc -->
 ## Notation
@@ -130,6 +136,8 @@
 
 - CosMo: Conditional Seq2Seq-based Mixture Model for Zero-Shot Commonsense Question Answering. COLING. 2020. [[paper]](https://www.aclweb.org/anthology/2020.coling-main.467)
 - Dynamic Neuro-Symbolic Knowledge Graph Construction for Zero-shot Commonsense Question Answering. AAAI. 2021. [[paper]](https://ojs.aaai.org/index.php/AAAI/article/view/16625)
+- Fusing Context Into Knowledge Graph for Commonsense Question Answering. ACL. 2021. [[paper]](https://arxiv.org/pdf/2012.04808.pdf)
+  - Human Parity on CommonsenseQA: Augmenting Self-Attention with External Attention. Arxiv. 2021. [[paper]](https://arxiv.org/pdf/2012.04808.pdf)
 
 ### 5.3. 3.3 Reasoning
 
@@ -161,12 +169,16 @@
 - Graphene: Semantically-Linked Propositions in Open Information Extraction. COLING. 2018. [[paper]](https://aclanthology.org/C18-1195/)
 
 #### 6.1.2. Supervised Method
-- **[RnnOIE; Seq2Seq; Tag]** Supervised Open Information Extraction. NAACL-HLT. 2018. [[paper]](https://doi.org/10.18653/v1/n18-1081)
-- **[CopyAttention; Seq2Seq; Generation]** Neural Open Information Extraction. ACL. 2018. [[paper]](https://aclanthology.org/P18-2065/)
+- **[RnnOIE; Tag]** Supervised Open Information Extraction. NAACL-HLT. 2018. [[paper]](https://doi.org/10.18653/v1/n18-1081)
+- **[CopyAttention; Generation]** Neural Open Information Extraction. ACL. 2018. [[paper]](https://aclanthology.org/P18-2065/)
 - **[Seq2Seq; Generation]** Logician: A Unified End-to-End Neural Approach for Open-Domain Information Extraction. WSDM. 2018. [[paper]](https://arxiv.org/abs/1904.12535)
 - **[SpanOIE; Span]** Span Model for Open Information Extraction on Accurate Corpus. AAAI. 2020. [[paper]](https://aaai.org/ojs/index.php/AAAI/article/view/6497)
-- **[OpenIE 6.x; Seq2Seq; Tag]** OpenIE6: Iterative Grid Labeling and Coordination Analysis for Open Information Extraction. EMNLP. 2020. [[paper]](https://doi.org/10.18653/v1/2020.emnlp-main.306) [[github]](https://github.com/dair-iitd/openie6)
-- **[IMoJIE; Seq2Seq; Generation]** IMoJIE: Iterative Memory-Based Joint Open Information Extraction. ACL. 2020. [[paper]](https://doi.org/10.18653/v1/2020.acl-main.521)
+- **[OpenIE 6.x; Tag]** OpenIE6: Iterative Grid Labeling and Coordination Analysis for Open Information Extraction. EMNLP. 2020. [[paper]](https://doi.org/10.18653/v1/2020.emnlp-main.306) [[github]](https://github.com/dair-iitd/openie6)
+- **[IMoJIE; Generation]** IMoJIE: Iterative Memory-Based Joint Open Information Extraction. ACL. 2020. [[paper]](https://doi.org/10.18653/v1/2020.acl-main.521)
+- **[MacroIE; Tag]** Maximal Clique Based Non-Autoregressive Open Information Extraction. EMNLP. 2021. [[paper]](https://aclanthology.org/2021.emnlp-main.764/)
+
+#### 6.1.3. Beyond
+- DocOIE: A Document-level Context-Aware Dataset for OpenIE. ACL-IJCNLP(Findings). 2021. [[paper]](https://aclanthology.org/2021.findings-acl.210/)
 
 ### 6.2. Semantic Role Labeling
 
@@ -189,6 +201,11 @@
 - WARP: Word-level Adversarial ReProgramming. ACL/IJCNLP. 2021. [[paper]](https://doi.org/10.18653/v1/2021.acl-long.381)
 - Prefix-Tuning: Optimizing Continuous Prompts for Generation. ACL/IJCNLP. 2021. [[paper]](https://doi.org/10.18653/v1/2021.acl-long.353)
 - The Power of Scale for Parameter-Efficient Prompt Tuning. EMNLP. 2021. [[paper]](https://arxiv.org/abs/2104.08691)
-- Surface Form Competition:Why the Highest Probability Answer Isn’t Always Right. EMNLP. 2021. [[paper]](https://aclanthology.org/2021.emnlp-main.564)
+- Surface Form Competition: Why the Highest Probability Answer Isn’t Always Right. EMNLP. 2021. [[paper]](https://aclanthology.org/2021.emnlp-main.564)
 - **[P-Tuning]** GPT Understands, Too. Arxiv. 2021. [[paper]](https://arxiv.org/abs/2103.10385)
 - P-Tuning v2: Prompt Tuning Can Be Comparable to Fine-tuning Universally Across Scales and Tasks. Arxiv. 2021. [[paper]](https://arxiv.org/abs/2110.07602v2)
+
+### 6.6. New Paradigm
+- Structured Prediction as Translation between Augmented Natural Languages. ICLR. 2021. [[paper]](https://openreview.net/forum?id=US-TP-xnXI)
+- A Unified Generative Framework for Aspect-Based Sentiment Analysis. ACL/IJCNLP. [[paper]](https://aclanthology.org/2021.acl-long.188/)
+- A Unified Generative Framework for Various NER Subtasks. ACL/IJCNLP. [[paper]](https://aclanthology.org/2021.acl-long.451/)
