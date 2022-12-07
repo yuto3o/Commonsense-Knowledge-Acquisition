@@ -8,7 +8,7 @@
 - [3. CSK Base](#3-commonsense-knowledge-base)
 - [4. CSK Mining](#4-commonsense-knowledge-mining)
 - [5. PTM as CSKB](#5-pretrained-language-model-as-commonsense-knowledge-base)
-- [6. Neural CSKB](#6-neural-commonsense-knowledge-base)
+- [6. Neural CSK Reasoning](#6-neural-commonsense-knowledge-reasoning)
 
 <!-- omit in toc -->
 ## Scholars
@@ -20,7 +20,7 @@
   - Niket Tandon [[github]](https://github.com/nikett)
   - Yejin Choi [[homepage]](https://homes.cs.washington.edu/~yejin/)
 
-- usc-isi-i2 [homepage](https://usc-isi-i2.github.io/home/)
+- usc-isi-i2 [[homepage]](https://usc-isi-i2.github.io/home/)
   > ISI's Center on Knowledge Graphs research group combines artificial intelligence, the semantic web, and database integration techniques to solve complex information integration problems. We leverage general research techniques across information-intensive disciplines, including medical informatics, geospatial data integration and the social Web.
 
 - Yangqiu Song [[homepage]](https://www.cse.ust.hk/~yqsong/)
@@ -41,13 +41,12 @@
 
 ## 2. Population
 - **[DICE]** Joint Reasoning for Multi-Faceted Commonsense Knowledge. AKBC. 2020. [[paper]](https://www.akbc.ws/2020/papers/QnPV72SZVt)
-- Commonsense Knowledge in Wikidata. ISWC. 2020. [[paper]](https://arxiv.org/abs/2008.08114)
+- Commonsense Knowledge in Wikidata. Workshop on wikidata at ISWC. 2020. [[paper]](https://arxiv.org/abs/2008.08114)
 - CogNet: Bridging Linguistic Knowledge, World Knowledge and Commonsense Knowledge. AAAI. 2021. [[paper]](https://ojs.aaai.org/index.php/AAAI/article/view/18029)
 - Lawyers are Dishonest? Quantifying Representational Harms in Commonsense Knowledge Resources. EMNLP. 2021. [[paper]](https://aclanthology.org/2021.emnlp-main.410/)
 - NegatER: Unsupervised Discovery of Negatives in Commonsense Knowledge Bases. EMNLP. 2021. [[paper]](https://aclanthology.org/2021.emnlp-main.456/)
 - CSKG: The CommonSense Knowledge Graph. ESWC. 2021. [[paper]](https://arxiv.org/abs/2012.11490)
 - Dimensions of Commonsense Knowledge. KBS. 2021. [[paper]](https://arxiv.org/abs/2101.04640)
-- Information to Wisdom: Commonsense Knowledge Extraction and Compilation. WSDM. 2021. [[paper]](https://doi.org/10.1145/3437963.3441664)
 - UnCommonSense: Informative Negative Knowledge about Everyday Concepts. CIKM 2022. [[paper]](https://doi.org/10.1145/3511808.3557484) 
 - Do Children Texts Hold The Key To Commonsense Knowledge?. EMNLP. 2022. [[paper]](https://arxiv.org/pdf/2210.04530)
 
@@ -55,7 +54,7 @@
 ## 3. Commonsense Knowledge Base
 - WordNet: An Electronic Lexical Database. The MIT Press. 1998. [[paper]](https://doi.org/10.7551/mitpress/7287.001.0001)
 - The Berkeley FrameNet Project. COLING-ACL. 1998. [[paper]](https://aclanthology.org/P98-1013/)
-- HowNet - a hybrid language and knowledge resource. NLPKE. 2003. [[paper]](https://ieeexplore.ieee.org/document/1276017)
+- HowNet - a hybrid language and knowledge resource. NLP-KE. 2003. [[paper]](https://ieeexplore.ieee.org/document/1276017)
   - OpenHowNet: An Open Sememe-based Lexical Knowledge Base. ArXiv. 2019. [[paper]](https://arxiv.org/abs/1901.09957)
 - Probase: a probabilistic taxonomy for text understanding. SIGMOD. 2012. [[paper]](https://doi.org/10.1145/2213836.2213891)
   - Probase+: Inferring Missing Links in Conceptual Taxonomies. TKDE. 2017. [[paper]](https://doi.org/10.1109/TKDE.2017.2653115)
@@ -106,16 +105,21 @@
 - Does Pre-training Induce Systematic Inference? How Masked Language Models Acquire Commonsense Knowledge. NAACL. 2022. [[paper]](https://aclanthology.org/2022.naacl-main.337.pdf)
 
 
-## 6. Neural Commonsense Knowledge Base
-- Teaching Pretrained Models with Commonsense Reasoning: A Preliminary KB-Based Approach. NeurIPS. 2019. [[paper]](https://arxiv.org/abs/1909.09743)
+## 6. Neural Commonsense Knowledge Reasoning
+- Commonsense Knowledge Base Completion. ACL. 2016. [[paper]](https://doi.org/10.18653/v1/p16-1137)
+- Commonsense Knowledge Base Completion and Generation. CoNLL. 2018. [[paper]](https://doi.org/10.18653/v1/k18-1014)
+- Commonsense Mining as Knowledge Base Completion? A Study on the Impact of Novelty. Workshop on Gen-Deep at ACL. 2018. [[paper]](http://dx.doi.org/10.18653/v1/W18-1002)
+- Teaching Pretrained Models with Commonsense Reasoning: A Preliminary KB-Based Approach. Workshop on KR2ML at NeurIPS. 2019. [[paper]](https://arxiv.org/abs/1909.09743)
 - COMET: Commonsense Transformers for Automatic Knowledge Graph Construction. ACL. 2019. [[paper]](https://doi.org/10.18653/v1/p19-1470)
   - (Comet-) Atomic 2020: On Symbolic and Neural Commonsense Knowledge Graphs. AAAI. 2021. [[paper]](https://ojs.aaai.org/index.php/AAAI/article/view/16792)
   - Symbolic Knowledge Distillation: from General Language Models to Commonsense Models. NAACL. 2022. [[paper]](https://doi.org/10.18653/v1/2022.naacl-main.341)
 - Commonsense Knowledge Base Completion with Structural and Semantic Context. AAAI. 2020. [[paper]](https://aaai.org/ojs/index.php/AAAI/article/view/5684)
 - Inducing Relational Knowledge from BERT. AAAI. 2020. [[paper]](https://aaai.org/ojs/index.php/AAAI/article/view/6242)
 - Inductive Learning on Commonsense Knowledge Graph Completion. IJCNN. 2021. [[paper]](https://arxiv.org/abs/2009.09263)
-- Learning from Missing Relations: Contrastive Learning with Commonsense Knowledge Graphs for Commonsense Inference. ACL. 2022. [[paper]](https://aclanthology.org/2022.findings-acl.119/)
-- Commonsense Knowledge Base Completion with Relational Graph Attention Network and Pre-trained Language Model. CIKM. 2022. [[paper]](https://doi.org/10.1145/3511808.3557564)
+- Commonsense Knowledge Reasoning and Generation with Pre-trained Language Models: A Survey. AAAI. 2022. [[paper]](https://ojs.aaai.org/index.php/AAAI/article/view/21496)
+- CAKE: A Scalable Commonsense-Aware Framework For Multi-View Knowledge Graph Completion. AACL. 2022. [[paper]](https://doi.org/10.18653/v1/2022.acl-long.205)
+- Learning from Missing Relations: Contrastive Learning with Commonsense Knowledge Graphs for Commonsense Inference. ACL(Findings). 2022. [[paper]](https://aclanthology.org/2022.findings-acl.119/)
+- Commonsense Knowledge Base Completion with Relational Graph Attention Network and Pre-trained Language Model. CIKM(short). 2022. [[paper]](https://doi.org/10.1145/3511808.3557564)
 
 
 
